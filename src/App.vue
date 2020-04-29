@@ -23,7 +23,7 @@
                 </div>
                 <input type="submit" :value="submitButton">
                 <input type="button" @click="clearForm" value="Cancel">
-            </form>
+            </form>   
         </div>
         <div class="data-wrapper">
             <table v-if="items.length > 0">
@@ -40,7 +40,7 @@
                     <td>{{ item.itemFine}}</td>
                     <td>{{ item.itemIsPaid}}</td>
                     <td>
-                        <button @click="updateItem(item.itemID)">Edit</button>
+                        <button @click="updateItem(item.itemID)">edit</button>
                         <button @click="removeItem(item.itemID)">Delete</button>
                     </td>
                 </tr>
